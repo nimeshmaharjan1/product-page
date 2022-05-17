@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Nunito:wght@300;400;500&display=swap");
 :root {
   --main-color: rgb(207, 207, 207);
   --body-font: "Nunito";
+  --heading-font: "Montserrat", sans-serif;
+  --body-size: 1.1rem;
 }
 * {
   line-height: 1.9em;
-}
-.main-section {
-  height: 70vh;
 }
 header {
   height: 100%;
@@ -15,8 +14,12 @@ header {
   color: rgb(207, 207, 207);
   p {
     margin: 0;
-    font-size: 1rem;
+    font-size: var(--body-size);
   }
+}
+h1 {
+  font-family: var(--heading-font) !important;
+  font-weight: 600 !important;
 }
 main {
   p,
@@ -29,7 +32,24 @@ main {
   p,
   li {
     font-family: var(--body-font);
-    font-size: 1rem;
+    font-size: var(--body-size);
+    text-align: justify;
+  }
+  .product-info {
+    .product-title {
+      border-bottom: 2px solid rgb(194, 194, 194);
+    }
+    .font-weight-bold {
+      font-weight: bold !important;
+      letter-spacing: 1px;
+      margin-left: -0.14rem;
+    }
+    ul {
+      margin-left: -2rem;
+      li {
+        list-style-type: none;
+      }
+    }
   }
   .color-circle {
     width: 50px;

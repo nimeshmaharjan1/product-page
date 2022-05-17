@@ -7,7 +7,7 @@
     <div class="cart">
       <a-button class="d-flex align-items-center" shape="round" type="primary">
         <template #icon> <ShoppingCartOutlined /> </template>Cart:
-        {{ props.cartNumber }}</a-button
+        {{ props.cartNumber.length }}</a-button
       >
     </div>
   </header>
@@ -15,6 +15,6 @@
 <script setup>
 import { ShoppingCartOutlined } from "@ant-design/icons-vue";
 const props = defineProps({
-  cartNumber: Number,
+  cartNumber: [],
 });
 </script>
