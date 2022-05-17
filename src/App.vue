@@ -21,12 +21,13 @@ let showPreview = ref(false);
     </a-layout-header>
     <a-layout-content>
       <Main
-        class="main-section"
+        class="main-section pb-5"
         :cart="cart"
         :premium="premium"
         @increaseBy="updateCart"
         @clear="clear"
       ></Main>
+      <hr />
     </a-layout-content>
     <a-layout-footer>
       <Footer></Footer>

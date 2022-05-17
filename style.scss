@@ -59,3 +59,38 @@ main {
     border-radius: 50%;
   }
 }
+footer {
+  background: var(--color-primary);
+  text-align: center;
+  font-size: 0.9rem;
+  a {
+    color: var(--color-bg);
+  }
+  .logo {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    display: inline-block;
+  }
+  .perma-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto 3rem;
+    list-style: none;
+  }
+  .copyright {
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .perma-links {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .socials {
+    margin-bottom: 2.6rem;
+  }
+}
