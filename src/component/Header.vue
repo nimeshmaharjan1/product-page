@@ -6,11 +6,15 @@
     </nav>
     <div class="cart">
       <a-button class="d-flex align-items-center" shape="round" type="primary">
-        <template #icon> <ShoppingCartOutlined /> </template>Cart</a-button
+        <template #icon> <ShoppingCartOutlined /> </template>Cart:
+        {{ props.cartNumber }}</a-button
       >
     </div>
   </header>
 </template>
 <script setup>
 import { ShoppingCartOutlined } from "@ant-design/icons-vue";
+const props = defineProps({
+  cartNumber: Number,
+});
 </script>
